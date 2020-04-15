@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import How from '../components/How';
 import styled from 'styled-components';
 
+
 const Home = function (){
 
 const Div = styled.div`
@@ -15,6 +16,11 @@ const Div = styled.div`
     return(
         <Div className="Home">
             <Navbar/>
+            <div>
+                <h1 className="header center blue-text">
+                    <b>Tu Crédito 100% online </b>
+                 </h1>
+            </div>
             <How/>
         </Div>
     );

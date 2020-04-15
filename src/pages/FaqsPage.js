@@ -1,6 +1,7 @@
 import React from 'react';
 
-const FaqsPAge = function (){
+const FaqsPage = function (){
+
     return(
         <div>
             FaqsPage
