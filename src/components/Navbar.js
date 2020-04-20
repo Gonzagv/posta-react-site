@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import ScrollspyNav from "react-scrollspy-nav";
+import {Button} from 'react-bootstrap';
 
 const Navbar = function(){
 
@@ -13,7 +14,7 @@ const Navbar = function(){
    `
     const Img = styled.img`
         position: left;
-        margin: 5px 15px 15px -200px;
+        margin: 5px 15px 15px 0px;
         height: 50px;
         width: 150px;
     `
@@ -42,29 +43,7 @@ const Navbar = function(){
         margin: 10px 10px 15px 100px;
         text-decoration: none;
         color: #666666;
-    `
-    const A = styled.a`
-        align-items: right;
-        margin: 10px 10px 15px 200px;
-        border-style: solid;
-        border-width : 1px 1px 1px 1px;
-        padding : 4px;
-        color: white;
-        border-color : #000000;
-        box-shadow: 3px 4px 0px 0px #1564ad;
-	    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-	    background-color:#79bbff;
-	    border-radius:5px;
-	    border:1px solid #337bc4;
-	    display:inline-block;
-	    cursor:pointer;
-	    color:#ffffff;
-	    font-family:Arial;
-	    font-size:17px;
-	    font-weight:bold;
-	    padding:12px 44px;
-	    text-decoration:none;
-	    text-shadow:0px 1px 0px #528ecc;
+        justify-content: space-around;
     `
 
     const A2 = styled.a`
@@ -73,36 +52,33 @@ const Navbar = function(){
         text-decoration: none;
         
     `
+    const StyledButton = styled(Button)`
+        margin: 10px 10px 15px 300px;
+        padding: 20px 20px 20px 20px;
+        background-color: rgb(29, 85, 226);
+    `
 
-    return(
-        <ScrollspyNav
-                    scrollTargetIds={["how", "req", "info"]}
-                    offset={100}
-                    activeNavClass="is-active"
-                    scrollDuration="1000"
-                    headerBackground="true"
-                >
-                
-            <div className="NavBar">
-                <div className="container-fluid">
-                    <Nav>
-                        <Ul>
-                            <Link to = "/">
-                                <Img src={process.env.PUBLIC_URL + '/img/posta logo-inverse.png'} /> 
-                            </Link>
-                                <Li className="grey-text scroll"><A2 href="#how">Como funciona</A2></Li>
-                                <Li> <A2 href="#req">Requisitos</A2></Li>
-                            <Link to = "/faqs">
-                                <Li>Preguntas Frequentes</Li>
-                            </Link>
-                                <Li> <A2 href="#info">Contacto</A2></Li>
-                            <A href = 'https://app.postacred.com.ar/?utm_source=Home&utm_medium=Sitio&utm_campaign=Organico&utm_term=2018'>PEDÍ TU CRÉDITO</A>
-                        </Ul>
-                    </Nav>
-                </div>
+    return(       
+        <div className="NavBar">
+            <div className="container-fluid">
+                <Nav>
+                    <Ul>
+                        <Link to = "/">
+                            <Img src={process.env.PUBLIC_URL + '/img/posta logo-inverse.png'} /> 
+                        </Link>
+                            <Li> <A2 href="#how">Como funciona</A2></Li>
+                            <Li> <A2 href="#req">Requisitos</A2></Li>
+                        <Link to = "/faqs">
+                            <Li>Preguntas Frequentes</Li>
+                        </Link>
+                            <Li> <A2 href="#info">Contacto</A2></Li>
+                        <StyledButton variant="primary">
+                            PEDÍ TU CRÉDITO
+                        </StyledButton>
+                    </Ul>
+                </Nav>
             </div>
-        </ScrollspyNav>
-        
+        </div> 
     );
 }
 

@@ -3,7 +3,7 @@ import React from 'react';
 
 const How = function (){
     return(
-        <div id="how"></div>
+        <div id="How"></div>
     );
 }
 
