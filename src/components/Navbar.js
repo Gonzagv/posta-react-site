@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useHistory} from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {Link as ScrLink} from 'react-scroll';
@@ -14,7 +14,7 @@ const Navbar = function(){
    `
     const Img = styled.img`
         position: left;
-        margin: 5px 15px 15px 0px;
+        margin: 20px 15px 15px 0px;
         height: 50px;
         width: 150px;
     `
@@ -34,8 +34,8 @@ const Navbar = function(){
 
     const Li = styled.li`
         font-size: 18px;
-        margin: 10px -10px -10px 50px;
-        padding: 100px 10px -20px 10px;
+        margin: 30px -10px -10px 125px;
+        padding: 100px 10px -10px 10px;
         text-decoration: none;
         color: #666666;
         font-family: "Arial Black", Gadget, sans-serif;
@@ -48,32 +48,60 @@ const Navbar = function(){
         
     `
     const StyledButton = styled(Button)`
-        margin: 10px 10px 15px -100px;
-        padding: 15px 15px 15px 10px;
+        margin: 15px 15px 15px 200px;
+        padding: 15px 15px 15px 15px;
         background-color: rgb(25, 66, 148);
         font-family: "Arial Black", Gadget, sans-serif;
+        text-decoration: none;
+        color:white;
+    `
+    const A = styled.a`
+        text-decoration:none;
+        color:white;
     `
 
-    return(       
+    return(      
         <div className="NavBar">
             <div className="container-fluid">
                 <Nav>
+                        
+                    <Ul>
                         <Link to = "/">
                             <Img src={process.env.PUBLIC_URL + '/img/posta logo-inverse.png'} /> 
                         </Link>
-                    <Ul>
-                            <Li> <A2 href="#req">Requisitos</A2></Li>
-                            <ScrLink to ="#how">
+                            <ScrLink activeClass="active"
+                                     to="req"
+                                     spy={true}
+                                     smooth={true}
+                                     offset={-70}
+                                     duration= {500}>
+                            <Li> <A2>Requisitos</A2></Li>
+                            </ScrLink>
+                            <ScrLink activeClass="active"
+                                     to="how"
+                                     spy={true}
+                                     smooth={true}
+                                     offset={-70}
+                                     duration= {500}>
                             <Li> <A2>Como funciona</A2></Li>
                             </ScrLink>
                         <Link to = "/faqs">
                             <Li>Preguntas Frequentes</Li>
                         </Link>
-                            <Li> <A2 href="#info">Contacto</A2></Li>
-                    </Ul>
+                            <ScrLink activeClass="active"
+                                     to="contact"
+                                     spy={true}
+                                     smooth={true}
+                                     offset={-70}
+                                     duration= {500}>
+                            <Li><A2>Contacto</A2></Li>
+                            </ScrLink>
                         <StyledButton variant="primary">
-                            PEDÍ TU CRÉDITO
+                            <A href="https://app.postacred.com.ar/?utm_source=Home&utm_medium=Sitio&utm_campaign=Organico&utm_term=2018">
+                                PEDÍ TU CRÉDITO
+                            </A>
                         </StyledButton>
+                    </Ul>
                 </Nav>
             </div>
         </div> 

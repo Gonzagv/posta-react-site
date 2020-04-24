@@ -54,7 +54,7 @@ const Info = function (){
         <Div id="info">
             <H1><b>Tu crédito 100% online</b></H1>
             <Div2>
-                <H4 style={props}>¡Conseguí hasta <B> $300.000</B> en sólo <B>15 minutos!</B></H4>
+                <H4 style={props}>¡Conseguí hasta <B> $300.000</B> en sólo <B>15 minutos</B>!</H4>
                 <H4 style={props}>Al toque y con mínimos requisitos. </H4>
             </Div2>
         </Div>

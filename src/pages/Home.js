@@ -16,30 +16,41 @@ const Div = styled.div`
 `
 const Div1 = styled.div`
     background-color: darkorange;
-    margin: 980px 10px 0px -200px;
-    padding: 100px 10px 100px 100px;
+    margin: 980px -10px 0px -100px;
+    padding: 100px 10px 100px 0px;
     align-items: center;
-    z-index: 15;
-    top: 30%;
-    left: 30%;
-    right: 30%;
+    background-size: cover;
+`
+const Div2 = styled.div`
+    background-color: darkorange;
+    margin: -20px -10px 0px -100px;
+    padding: 100px 10px 100px 0px;
+    align-items: center;
+    background-size: cover;
 `
 const H1 = styled.h1`
     color:white;
-    font-size:50px;
+    font-size:40px;
     font-family: "Arial Black", Gadget, sans-serif;
     padding: 10px 10px 10px 10px;
+    margin : 10px 10px 10px 10px;
+`
+const B = styled.b`
+    font-size:40px;
 `
 
     return(
         <Div>
             <Navbar/>
             <Div1>
-                <H1>¡Más de 22.000 créditos otorgados!</H1>
+                <H1>¡Más de <B>22.000 créditos</B> otorgados!</H1>
             </Div1>
             <Req/>
             <Info/>
             <How/>
+            <Div2>
+                <H1>Podés tener desde <B>$1.000 hasta $300.000</B> de 2 a 24 cuotas</H1>
+            </Div2>
         </Div>
     );
 }
