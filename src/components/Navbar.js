@@ -1,4 +1,4 @@
-import React, {useHistory} from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {Link as ScrLink} from 'react-scroll';
@@ -96,11 +96,13 @@ const Navbar = function(){
                                      duration= {500}>
                             <Li><A2>Contacto</A2></Li>
                             </ScrLink>
-                        <StyledButton variant="primary">
+                        
                             <A href="https://app.postacred.com.ar/?utm_source=Home&utm_medium=Sitio&utm_campaign=Organico&utm_term=2018">
+                                <StyledButton variant="primary">
                                 PEDÍ TU CRÉDITO
+                                </StyledButton>
                             </A>
-                        </StyledButton>
+                        
                     </Ul>
                 </Nav>
             </div>

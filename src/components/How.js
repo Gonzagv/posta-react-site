@@ -7,14 +7,9 @@ const Div = styled.div`
     background-image: linear-gradient(to right top,#00253c,#00304d,#003b5f,#004771,#005384);
     opacity: 0.8;
     color: blue;
-    margin: 10px 10px 20px -100px;
-    padding: 100px 10px 100px 10px;
     align-items: center;
-    z-index: 15;
-    top: 30%;
-    left: 30%;
-    right: 30%;
-    bottom: 30%;
+    margin: -20px -10px 0px -100px;
+    padding: 100px 10px 100px 0px;
 `
 
 const H1 = styled.h1`
@@ -76,9 +71,11 @@ const How = function (){
                         </Span>
                     </Col>
                 </Row>
-                <StyledButton variant="primary">
-                    ¡LO QUIERO! 
-                </StyledButton>
+                <a href="https://app.postacred.com.ar/?utm_source=Home&utm_medium=Sitio&utm_campaign=Organico&utm_term=2018">
+                    <StyledButton variant="primary">
+                        ¡LO QUIERO! 
+                    </StyledButton>
+                </a>
             </Container>
         </Div>
     );

@@ -4,7 +4,6 @@ import How from '../components/How';
 import Req from '../components/Req';
 import styled from 'styled-components';
 import Info from '../components/Info';
-import { useState } from 'react';
 
 const Home = function (){
 
@@ -23,17 +22,15 @@ const Div1 = styled.div`
 `
 const Div2 = styled.div`
     background-color: darkorange;
-    margin: -20px -10px 0px -100px;
+    margin: 0px -10px 0px -100px;
     padding: 100px 10px 100px 0px;
     align-items: center;
     background-size: cover;
 `
 const H1 = styled.h1`
-    color:white;
-    font-size:40px;
+    color: white;
+    font-size: 30px;
     font-family: "Arial Black", Gadget, sans-serif;
-    padding: 10px 10px 10px 10px;
-    margin : 10px 10px 10px 10px;
 `
 const B = styled.b`
     font-size:40px;
@@ -49,7 +46,9 @@ const B = styled.b`
             <Info/>
             <How/>
             <Div2>
-                <H1>Podés tener desde <B>$1.000 hasta $300.000</B> de 2 a 24 cuotas</H1>
+                <H1>Podés tener desde <br />
+                <B>$1.000 hasta $300.000</B> <br />
+                de 2 a 24 cuotas</H1>
             </Div2>
         </Div>
     );
