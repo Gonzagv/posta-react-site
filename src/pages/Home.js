@@ -3,9 +3,8 @@ import Navbar from '../components/Navbar';
 import How from '../components/How';
 import Req from '../components/Req';
 import styled from 'styled-components';
+import Payment from '../components/Payment';
 import Info from '../components/Info';
-
-const Home = function (){
 
 const Div = styled.div`
     background-image: url('/img/posta_hero.jpg');
@@ -36,6 +35,8 @@ const B = styled.b`
     font-size:40px;
 `
 
+const Home = function (){
+
     return(
         <Div>
             <Navbar/>
@@ -50,6 +51,7 @@ const B = styled.b`
                 <B>$1.000 hasta $300.000</B> <br />
                 de 2 a 24 cuotas</H1>
             </Div2>
+            <Payment/>
         </Div>
     );
 }

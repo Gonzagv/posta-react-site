@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import {Container, Row, Col } from 'reactstrap';
 import {Button} from 'react-bootstrap';
@@ -41,14 +41,8 @@ const StyledButton = styled(Button)`
 
 const Req = function (){
 
-    function toggleMore() {
-        var reqRow = document.getElementById("reqRow");
-        if (reqRow.style.display === "none") {
-            reqRow.style.display = "block";
-        } else {
-            reqRow.style.display = "none";
-        }
-    }
+    const [toggleView, setToggleView ] = useState(false);
+
     return(
         <Div id="req">
             <Container>
@@ -78,44 +72,45 @@ const Req = function (){
                             <P>Es excluyente que acredites tus haberes en una cuenta bancaria.</P>
                         </Col>
                     </Row>
-                        <StyledButton variant="primary" onClick={toggleMore}>
+                        <StyledButton variant="primary" onClick={()=>setToggleView(!toggleView)}>
                             Ver Más
                         </StyledButton>
                     </Container>
-                    <Container id="reqRow">
-                    <Row>
-                        <Col>
-                            <Span>
-                                <i class="fas fa-mobile-alt"></i>
-                            </Span>
-                            <H5>Teléfono celular</H5>
-                            <P>Te enviaremos un código numérico para re confirmar.</P>
-                        </Col>
-                        <Col>
-                            <Span>
-                                <i class="fas fa-wallet"></i>
-                            </Span>
-                            <H5>Ingreso mínimo de $6.000</H5>
-                            <P>Queremos cuidarte, por lo que medimos la relación cuota/ingreso.</P>
-                        </Col>
-                        <Col>
-                            <Span>
-                                <i class="far fa-building"></i>
-                            </Span>
-                            <H5>Antigüedad laboral mínima de 3 meses</H5>
-                            <P>Nos interesa cuidarte, por lo que tenemos en cuenta tu estabilidad laboral.</P>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col sm="12" md={{ size: 6, offset: 3 }}>
-                            <Span>
-                                <i class="far fa-envelope"></i>
-                            </Span>
-                            <H5>Correo electrónico</H5>
-                            <P>En este recibirás nuestro contrato y toda la información necesaria.</P>
-                        </Col>
-                    </Row>
-                </Container>
+                    {toggleView &&  <Container id="reqRow">
+                                        <Row>
+                                            <Col>
+                                                <Span>
+                                                    <i class="fas fa-mobile-alt"></i>
+                                                </Span>
+                                                <H5>Teléfono celular</H5>
+                                                <P>Te enviaremos un código numérico para re confirmar.</P>
+                                            </Col>
+                                            <Col>
+                                                <Span>
+                                                    <i class="fas fa-wallet"></i>
+                                                </Span>
+                                                <H5>Ingreso mínimo de $6.000</H5>
+                                                <P>Queremos cuidarte, por lo que medimos la relación cuota/ingreso.</P>
+                                            </Col>
+                                            <Col>
+                                                <Span>
+                                                    <i class="far fa-building"></i>
+                                                </Span>
+                                                <H5>Antigüedad laboral mínima de 3 meses</H5>
+                                                <P>Nos interesa cuidarte, por lo que tenemos en cuenta tu estabilidad laboral.</P>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col sm="12" md={{ size: 6, offset: 3 }}>
+                                                <Span>
+                                                    <i class="far fa-envelope"></i>
+                                                </Span>
+                                                <H5>Correo electrónico</H5>
+                                                <P>En este recibirás nuestro contrato y toda la información necesaria.</P>
+                                            </Col>
+                                        </Row>
+                                    </Container>}
+                    
         </Div>
     );
 }
