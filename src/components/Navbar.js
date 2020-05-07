@@ -50,7 +50,7 @@ const Navbar = function(){
     const StyledButton = styled(Button)`
         margin: 15px 15px 15px 200px;
         padding: 15px 15px 15px 15px;
-        background-color: rgb(25, 66, 148);
+        background-color: #191970;
         font-family: "Arial Black", Gadget, sans-serif;
         text-decoration: none;
         color:white;

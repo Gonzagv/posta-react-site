@@ -4,11 +4,11 @@ import {Container, Row, Col } from 'reactstrap';
 import {Button} from 'react-bootstrap';
 
 const Div = styled.div`
-    background-image: linear-gradient(to right top,#00253c,#00304d,#003b5f,#004771,#005384);
-    opacity: 0.8;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
     color: blue;
     align-items: center;
-    margin: -20px -10px 0px -100px;
+    margin: -20px -10px 0px -50px;
     padding: 100px 10px 100px 0px;
 `
 
@@ -37,10 +37,11 @@ const Span = styled.span`
 `
 
 const StyledButton = styled(Button)`
-    background-color: darkorange;
+    background-color: white;
     font-family: "Arial Black", Gadget, sans-serif;
     padding: 10px 10px 10px 10px;
     margin: 100px 20px 20px 20px;
+    color: 	#005384;
 `
 
 const How = function (){

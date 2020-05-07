@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Div = styled.div`
 background-color: white;
-margin: 10px 10px 20px -100px;
+margin: 0px 10px 20px -50px;
 padding: 20px 10px 100px 10px;
 align-items: center;
 `
@@ -14,7 +14,7 @@ text-align: center;
 padding: 10px 10px 10px 10px;
 margin: 10px 10px 10px 10px;
 font-size: 60px;
-color: rgb(25, 66, 148);
+color: #005384;
 `
 
 const Img = styled.img`
@@ -51,6 +51,22 @@ const Payment = function(){
                             <Img src={process.env.PUBLIC_URL + '/img/pagofacil.png'} alt="pagofacilLogo">
                             
                             </Img>
+                        </a>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs="6">
+                        <a href="https://www.rapipago.com.ar/rapipagoWeb/index.php">
+                            <Img src={process.env.PUBLIC_URL + '/img/rapipago.png'} alt="rapipagoLogo">
+                        
+                            </Img>
+                        </a>
+                    </Col>
+                    <Col xs="6">
+                        <a href="https://pagomiscuentas.com/">
+                            <img src={process.env.PUBLIC_URL + '/img/pagomiscuentas.png'} alt="pagomiscuentasLogo">
+                            
+                            </img>
                         </a>
                     </Col>
                 </Row>

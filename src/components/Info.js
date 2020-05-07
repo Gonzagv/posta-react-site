@@ -6,11 +6,8 @@ const Div = styled.div`
     background-color: hsla(0,0%,100%,.7);
     opacity: 0.8;
     color: blue;
-    margin: 10px 10px 20px -100px;
-    padding: 40px 10px 10px 10px;
     align-items: center;
     position: absolute;
-    z-index: 15;
     top: 30%;
     left: 30%;
     right: 30%;
