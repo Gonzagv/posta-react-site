@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Row, Col } from 'reactstrap';
 import styled from 'styled-components';
+import { useSpring, animated } from "react-spring";
 
 const Div = styled.div`
 background-color: white;
@@ -12,62 +13,98 @@ const H1 = styled.h1`
 font-family: Ultra, serif;
 text-align: center;
 padding: 10px 10px 10px 10px;
-margin: 10px 10px 10px 10px;
+margin: 30px 10px 50px 10px;
 font-size: 60px;
 color: #005384;
 `
 
-const Img = styled.img`
+const StyledCol= styled(Col)`
+    padding: 10px 10px 10px 10px;
+`
+
+const StyledRapipago = styled(animated.img)`
+    height: 60px;
+    width: 200px;
+`
+const StyledPagoFacil = styled(animated.img)`
     height: 100px;
     width: 100px;
-    margin: 20px 15px 15px 0px;
 `
+
+const SpanDebito = styled.span`
+    font-size: 40px;
+    color: #005384;
+`
+const SpanTransferencia = styled.span`
+    font-size: 40px;
+    color: #005384;
+    margin:0px 0px 40px 0px;
+`
+
+const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
+const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
 
 const Payment = function(){
+    const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
     return(
         <Div id="Payment">
             <Container>
-                <H1>Medios de Pago</H1>
+                <H1><b>Medios de Pago</b></H1>
                 <Row>
                     <Col xs="6">
                         <a href="https://www.rapipago.com.ar/rapipagoWeb/index.php">
-                            <Img src={process.env.PUBLIC_URL + '/img/rapipago.png'} alt="rapipagoLogo">
-                        
-                            </Img>
+                            <StyledRapipago src={process.env.PUBLIC_URL + '/img/rapipago.png'} 
+                                            alt="rapipagoLogo" 
+                                            onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                                            onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                            style={{ transform: props.xys.interpolate(trans) }}>
+                            </StyledRapipago>
                         </a>
                     </Col>
-                    <Col xs="6">
-                        <a href="https://pagomiscuentas.com/">
-                            <img src={process.env.PUBLIC_URL + '/img/pagomiscuentas.png'} alt="pagomiscuentasLogo">
-                            
-                            </img>
-                        </a>
-                    </Col>
+                    <StyledCol xs="6">
+                        <animated.a href="https://pagomiscuentas.com/">
+                            <animated.img src={process.env.PUBLIC_URL + '/img/pagomiscuentas.png'} 
+                                          alt="pagomiscuentasLogo"
+                                          onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                                          onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                          style={{ transform: props.xys.interpolate(trans) }}>
+                            </animated.img>
+                        </animated.a>
+                    </StyledCol>
                 </Row>
                 <Row>
                     <Col sm="12" md={{ size: 6, offset: 3 }}>
                         <a href="https://www.e-pagofacil.com/">
-                            <Img src={process.env.PUBLIC_URL + '/img/pagofacil.png'} alt="pagofacilLogo">
-                            
-                            </Img>
+                            <StyledPagoFacil src={process.env.PUBLIC_URL + '/img/pagofacil.png'} 
+                                             alt="pagofacilLogo" 
+                                             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                                             onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                             style={{ transform: props.xys.interpolate(trans) }}>
+                            </StyledPagoFacil>
                         </a>
                     </Col>
                 </Row>
                 <Row>
                     <Col xs="6">
-                        <a href="https://www.rapipago.com.ar/rapipagoWeb/index.php">
-                            <Img src={process.env.PUBLIC_URL + '/img/rapipago.png'} alt="rapipagoLogo">
-                        
-                            </Img>
-                        </a>
+                        <SpanDebito>
+                            <animated.i class="far fa-credit-card fa-2x" 
+                                        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                                        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                        style={{ transform: props.xys.interpolate(trans) }}>
+                                    <h5><b>Débito</b></h5>
+                            </animated.i>
+                        </SpanDebito>
                     </Col>
                     <Col xs="6">
-                        <a href="https://pagomiscuentas.com/">
-                            <img src={process.env.PUBLIC_URL + '/img/pagomiscuentas.png'} alt="pagomiscuentasLogo">
-                            
-                            </img>
-                        </a>
+                        <SpanTransferencia>
+                            <animated.i class="fas fa-university fa-2x" 
+                                        onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+                                        onMouseLeave={() => set({ xys: [0, 0, 1] })}
+                                        style={{ transform: props.xys.interpolate(trans) }}>
+                                    <h5><b>Transferencia Bancaria</b></h5>
+                            </animated.i>
+                        </SpanTransferencia>
                     </Col>
                 </Row>
             </Container>

@@ -11,7 +11,7 @@ const Div = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    margin: 0;
+    width: 100%;
 `
 const Div1 = styled.div`
     background-color: #fe7414;

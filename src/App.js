@@ -3,11 +3,10 @@ import './App.css';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import FaqsPage from './pages/FaqsPage';
-
-
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 function App() {
+
   return (
     <div className="App">
       <BrowserRouter>
