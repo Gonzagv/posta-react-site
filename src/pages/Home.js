@@ -5,6 +5,7 @@ import Req from '../components/Req';
 import styled from 'styled-components';
 import Payment from '../components/Payment';
 import Info from '../components/Info';
+import Who from '../components/Who';
 
 const Div = styled.div`
     background-image: url('/img/posta_hero.jpg');
@@ -49,6 +50,7 @@ const Home = function (){
                 de 2 a 24 cuotas</H1>
             </Div2>
             <Payment/>
+            <Who />
         </Div>
     );
 }
