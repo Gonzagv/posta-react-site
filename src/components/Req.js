@@ -36,7 +36,7 @@ const StyledButton = styled(Button)`
     background-color: #005384;
     font-family: "Arial Black", Gadget, sans-serif;
     padding: 10px 10px 10px 10px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 40px 20px;
 `
 
 const Req = function (){

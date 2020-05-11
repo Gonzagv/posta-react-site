@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import Payment from '../components/Payment';
 import Info from '../components/Info';
 import Who from '../components/Who';
+import Contact from '../components/Contact';
+import CopyRight from '../components/CopyRight';
 
 const Div = styled.div`
     background-image: url('/img/posta_hero.jpg');
@@ -16,7 +18,6 @@ const Div = styled.div`
 `
 const Div1 = styled.div`
     background-color: #fe7414;
-    margin: 980px -10px 0px -50px;
     padding: 100px 10px 100px 0px;
     align-items: center;
     background-size: cover;
@@ -37,9 +38,11 @@ const H1 = styled.h1`
 const Home = function (){
 
     return(
-        <Div>
-            <Navbar/>
-            <Info/>
+        <div>
+            <Div>
+                <Navbar/>
+                <Info/>
+            </Div>
             <Div1>
                 <H1>¡Más de <b>22.000 créditos</b> otorgados!</H1>
             </Div1>
@@ -50,8 +53,11 @@ const Home = function (){
                 de 2 a 24 cuotas</H1>
             </Div2>
             <Payment/>
-            <Who />
-        </Div>
+            <Who/>
+            <Contact/>
+            <CopyRight />
+        </div>
+        
     );
 }
 
