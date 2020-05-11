@@ -11,6 +11,7 @@ const Div = styled.div`
     left: 20%;
     right: 20%;
     bottom: 45%;
+    
     @media (max-width: 768px) {
     width: 200px;
   }

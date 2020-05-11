@@ -30,6 +30,7 @@ const Pre = styled.pre`
     color: #fff;
     font-size: 25px;
     margin: 30px 0px 0px 600px;
+    white-space: pre-wrap;
 `
 
 const Who = function(){

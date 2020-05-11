@@ -6,9 +6,7 @@ import {Button} from 'react-bootstrap';
 const H4 = styled.h4`
     font-family: Montserrat,sans-serif;
     margin: -500px 0px 0px 600px;
-    color: blue;
     font-size: 45px;
-    font-family: Ultra, serif;
     color: #005384;
 `
 const StyledButton = styled(Button)`
@@ -20,6 +18,7 @@ const StyledButton = styled(Button)`
 const Div = styled.div`
     padding: 570px 600px 0px 0px;
     margin: 10px 0px 0px 0px;
+    height: 30vh;
 `
 const StyledRow = styled(Row)`
     padding: 60px 0px 0px 590px;
