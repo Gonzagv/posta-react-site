@@ -18,7 +18,6 @@ const StyledButton = styled(Button)`
 const Div = styled.div`
     padding: 570px 600px 0px 0px;
     margin: 10px 0px 0px 0px;
-    height: 30vh;
 `
 const StyledRow = styled(Row)`
     padding: 60px 0px 0px 590px;
@@ -79,6 +78,7 @@ const Contact = function(){
                 </StyledRow2>
             </Container>
         </Div>
+        
     )
 }
 

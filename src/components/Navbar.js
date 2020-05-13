@@ -13,11 +13,10 @@ const Navbar = function(){
         min-height: 10vh;
    `
     const Img = styled.img`
-        position: left;
         margin: 20px 15px 15px 0px;
         height: 50px;
         width: 150px;
-
+        /*
         @media (max-width: 1600px) {
         height: 40px;
         width: 120px;
@@ -27,6 +26,7 @@ const Navbar = function(){
         height: 30px;
         width: 100px;
      }
+     */
     `
 
     const Ul = styled.ul`
@@ -40,13 +40,14 @@ const Navbar = function(){
         font-variant: normal;
         text-transform: none;
         white-space: nowrap;
-
+        /*
         @media (max-width: 1600px) {
         font-size: 10px;
      }
         @media (max-width: 1450px) {
         font-size: 5px;
      }
+     */
     `
 
     const Li = styled.li`
@@ -56,7 +57,7 @@ const Navbar = function(){
         text-decoration: none;
         color: #666666;
         font-family: "Arial Black", Gadget, sans-serif;
-        
+        /*
         @media (max-width: 1600px) {
         font-size: 14px;
         margin: 30px 50px 10px 10px;
@@ -65,6 +66,7 @@ const Navbar = function(){
         @media (max-width: 1450px) {
 
     }
+    */
     `
 
     const A2 = styled.a`
@@ -79,21 +81,22 @@ const Navbar = function(){
         font-family: "Arial Black", Gadget, sans-serif;
         text-decoration: none;
         color:white;
+        /*
         @media (max-width: 1600px) {
         font-size: 14px;
         margin: 30px 50px 10px 10px;
         padding: 100px 10px -10px 10px;
     }
+    */
     `
     const A = styled.a`
         text-decoration:none;
         color:white;
     `
-
     return(      
         <div className="NavBar">
             <div className="container-fluid">
-                <Nav>
+                <Nav class="navbar-fixed">
                         
                     <Ul>
                         <Link to = "/">

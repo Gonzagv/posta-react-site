@@ -40,7 +40,6 @@ const StyledButton = styled(Button)`
 `
 
 const Req = function (){
-
     const [toggleView, setToggleView ] = useState(false);
 
     return(
@@ -120,6 +119,7 @@ const Req = function (){
                     
         </Div>
     );
+
 }
 
 export default Req;

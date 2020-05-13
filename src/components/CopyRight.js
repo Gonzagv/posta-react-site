@@ -17,6 +17,9 @@ const StyledCol = styled(Col)`
 const StyledCol2 = styled(Col)`
     margin : 100px 0px 0px 0px;
 `
+const Span = styled.span`
+    padding: 0px 0px 0px 200px;
+`
 
 const H4 = styled.h4`
     font-family: Montserrat,sans-serif;
@@ -31,7 +34,8 @@ const A = styled.a`
     list-style: none;
 `
 const StyledRow = styled(Row)`
-    margin: 10px 300px 0px 0px;
+    font-size:15px;
+    padding: 20px 200px 0px 0px;
 `
 
 
@@ -75,11 +79,18 @@ const CopyRight = function(){
                             <Col>
                                 <A target="_blank" href="../../resources/terminos-y-condiciones.pdf">Términos y Condiciones</A>
                             </Col>
-                            <Col> <A href="https://www.argentina.gob.ar/defensadelconsumidor">Defensa al Consumidor</A></Col>
+                            <Col>
+                                <A href="https://www.argentina.gob.ar/defensadelconsumidor">Defensa al Consumidor</A>
+                            </Col>
+                            <Col>
+                                <A href="mailto:empleos@postacred.com">Trabaja con nosotros</A>
+                            </Col>
                         </StyledRow>
                     </Col>
                     <Col>
-
+                        <Span>
+                            <A href="http://qr.afip.gob.ar/?qr=hlqSx8tPhj-LUCJvMcKwTA,,"><img src={process.env.PUBLIC_URL + '/img/datafiscal.png'} alt="data fiscal"></img></A>
+                        </Span>
                     </Col>
                 </Row>
             </Container>

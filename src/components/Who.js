@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Div = styled.div`
     background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
     height: 53.80vh;
+    padding: 0px 0px 50px 0px;
 `
 
 const Img = styled.img`
@@ -30,7 +31,6 @@ const Pre = styled.pre`
     color: #fff;
     font-size: 25px;
     margin: 30px 0px 0px 600px;
-    white-space: pre-wrap;
 `
 
 const Who = function(){

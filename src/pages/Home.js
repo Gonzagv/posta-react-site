@@ -14,13 +14,10 @@ const Div = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100%;
 `
 const Div1 = styled.div`
     background-color: #fe7414;
     padding: 100px 10px 100px 0px;
-    align-items: center;
-    background-size: cover;
 `
 const Div2 = styled.div`
     background-color: #fe7414;
@@ -52,9 +49,9 @@ const Home = function (){
                 <H1>Podés tener desde <b>$1.000 hasta $300.000</b> <br/>
                 de 2 a 24 cuotas</H1>
             </Div2>
-            <Payment/>
-            <Who/>
-            <Contact/>
+            <Payment />
+            <Who />
+            <Contact />
             <CopyRight />
         </div>
         

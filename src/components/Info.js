@@ -11,6 +11,7 @@ const Div = styled.div`
     left: 20%;
     right: 20%;
     bottom: 45%;
+    border-radius: 10px 10px 10px 10px;
     
     @media (max-width: 768px) {
     width: 200px;
@@ -83,7 +84,7 @@ const B = styled.b`
 
 
 const Info = function (){
-
+    
     const props = useSpring({
         opacity: 1,
         from: { opacity: 0 },
