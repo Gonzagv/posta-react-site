@@ -30,8 +30,8 @@ const H4 = styled.h4`
 `
 const A = styled.a`
     color:white;
-    text-transform: none;
-    list-style: none;
+    text-decoration: none;
+    :hover{color:#fe7414}
 `
 const StyledRow = styled(Row)`
     font-size:15px;

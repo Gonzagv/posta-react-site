@@ -26,6 +26,7 @@ const StyledRow = styled(Row)`
 `
 const Span = styled.span`
     font-size: 40px;
+    :hover{color:#fe7414};
 `
 const Span2 = styled.span`
     padding: 10px 0px 0px 0px;

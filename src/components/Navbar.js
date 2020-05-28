@@ -11,6 +11,7 @@ const Navbar = function(){
         justify-content: space-around;
         align-items: center;
         min-height: 10vh;
+        background: white;
    `
     const Img = styled.img`
         margin: 20px 15px 15px 0px;
@@ -57,6 +58,7 @@ const Navbar = function(){
         text-decoration: none;
         color: #666666;
         font-family: "Arial Black", Gadget, sans-serif;
+        :hover{text-decoration: none;}
         /*
         @media (max-width: 1600px) {
         font-size: 14px;
