@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+import Navigation from "../components/Navigation";
 import CopyRight from "../components/CopyRight";
 import styled from "styled-components";
 import Accordion from "../components/Accordion/Accordion";
@@ -8,9 +8,9 @@ import Terms from "../components/Terms";
 const H1 = styled.h1`
   background-color: #005384;
   color: white;
-  height: 15vh;
+  height: 5vh;
   font-size: 50px;
-  padding: 45px;
+  padding: 200px;
   font-family: "Arial Black", Gadget, sans-serif;
 `;
 
@@ -28,16 +28,13 @@ const Div = styled.div`
 `;
 
 const FaqsPage = function () {
-  const [navbar, setnavbar] = useState(Navbar);
-  console.log(Navbar);
-
   return (
     <div>
-      <Navbar />
+      <Navigation />
+      <H1>
+        <b>Preguntas Frecuentes</b>
+      </H1>
       <Div className="accordion__section">
-        <H1>
-          <b>Preguntas Frecuentes</b>
-        </H1>
         <H2>Cómo Funcionamos</H2>
         <DivAccordeon className="accordion__comofuncionamos">
           <Accordion title="¿Quiénes somos y cómo funcionamos?">
@@ -430,8 +427,8 @@ const FaqsPage = function () {
             </span>
           </Accordion>
         </DivAccordeon>
-          <CopyRight />
-          <Terms />
+        <CopyRight />
+        <Terms />
       </Div>
     </div>
   );
