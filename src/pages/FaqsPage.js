@@ -10,7 +10,7 @@ const H1 = styled.h1`
   color: white;
   height: 15vh;
   font-size: 50px;
-  padding:100px;
+  padding:140px;
   font-family: "Arial Black", Gadget, sans-serif;
 `;
 
