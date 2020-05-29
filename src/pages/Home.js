@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navigation from "../components/Navigation";
 import How from "../components/How";
 import Req from "../components/Req";
@@ -32,10 +32,10 @@ const H1 = styled.h1`
   font-family: "Arial Black", Gadget, sans-serif;
 `;
 
-const Home = function () {
+const Home = function (props) {
   return (
     <div>
-      <Navigation />
+      <Navigation currentSection="Home"/>
       <Div>
         <Info />
       </Div>

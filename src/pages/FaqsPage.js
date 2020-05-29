@@ -8,9 +8,9 @@ import Terms from "../components/Terms";
 const H1 = styled.h1`
   background-color: #005384;
   color: white;
-  height: 5vh;
+  height: 15vh;
   font-size: 50px;
-  padding: 200px;
+  padding:100px;
   font-family: "Arial Black", Gadget, sans-serif;
 `;
 
@@ -27,15 +27,15 @@ const Div = styled.div`
   background-color: white;
 `;
 
-const FaqsPage = function () {
+const FaqsPage = function (props) {
   return (
     <div>
-      <Navigation />
+      <Navigation currentSection="FaqsPage" />
       <H1>
         <b>Preguntas Frecuentes</b>
       </H1>
       <Div className="accordion__section">
-        <H2>Cómo Funcionamos</H2>
+        <H2 id="comofuncionamos">Cómo Funcionamos</H2>
         <DivAccordeon className="accordion__comofuncionamos">
           <Accordion title="¿Quiénes somos y cómo funcionamos?">
             <span className="accordion-text">
@@ -150,7 +150,7 @@ const FaqsPage = function () {
               </p>
             </span>
           </Accordion>
-          <H2>¿Cómo solicitar un crédito?</H2>
+          <H2 id="comosolicitar">¿Cómo solicitar un crédito?</H2>
           <Accordion title="¿Cuáles son nuestros requisitos?">
             <span className="accordion-text">
               <p>Sólo necesitás:</p>
@@ -301,7 +301,7 @@ const FaqsPage = function () {
               </p>
             </span>
           </Accordion>
-          <H2>Clientes</H2>
+          <H2 id="clientes">Clientes</H2>
           <Accordion title="¿Cuál es el tiempo máximo para recibir el dinero?">
             <span className="accordion-text">
               <p>
@@ -378,7 +378,7 @@ const FaqsPage = function () {
               historial crediticio.
             </p>
           </Accordion>
-          <H2>¿Querés incrementar el monto de tu crédito?</H2>
+          <H2 id="incrementarmonto">¿Querés incrementar el monto de tu crédito?</H2>
           <Accordion
             title="Todavía estás pagando tu crédito Posta pero querés más plata ¿Cómo
                 hacerlo?"
@@ -405,7 +405,7 @@ const FaqsPage = function () {
               </p>
             </span>
           </Accordion>
-          <H2>Consultas sobre datos relevantes</H2>
+          <H2 id="datosrelevantes">Consultas sobre datos relevantes</H2>
           <Accordion title="¿Qué es el CBU? ¿Para qué lo necesitamos?">
             <span className="accordion-text">
               <p>

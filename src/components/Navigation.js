@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Navbar, Button, Nav } from "react-bootstrap";
+import { Navbar, Button, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Link as ScrLink } from "react-scroll";
 import styled from "styled-components";
 
 const Img = styled.img`
-  margin: 0px 0px 0px 140px;
+  margin-left: 140px;
   height: 50px;
   width: 150px;
 
@@ -20,17 +20,26 @@ const Img = styled.img`
   }
 `;
 
-const Div = styled.div`
-  height: 100%;
-  top: 0;
+const StyledNav = styled(Navbar)`
+  height: 6em;
 `;
 
 const Li = styled.li`
   font-size: 18px;
-  margin: 30px -10px -10px 125px;
-  padding: 100px 10px -10px 10px;
+  margin: 0px -10px -10px 155px;
   text-decoration: none;
-  color: #666666;
+  color: #005384;
+  font-family: "Arial Black", Gadget, sans-serif;
+  :hover {
+    text-decoration: none;
+  }
+`;
+
+const Li2 = styled.li`
+  font-size: 18px;
+  text-decoration: none;
+  margin-left: 1100px;
+  color: #005384;
   font-family: "Arial Black", Gadget, sans-serif;
   :hover {
     text-decoration: none;
@@ -42,8 +51,6 @@ const A2 = styled.a`
   text-decoration: none;
 `;
 const StyledButton = styled(Button)`
-  margin: 15px 15px 15px 200px;
-  padding: 15px 15px 15px 15px;
   background-color: #191970;
   font-family: "Arial Black", Gadget, sans-serif;
   text-decoration: none;
@@ -54,10 +61,10 @@ const A = styled.a`
   color: white;
 `;
 
-function Navigation() {
-  return (
-    <Div>
-      <Navbar bg="light" expand="lg" fixed="top">
+function Navigation(props) {
+  if (props.currentSection === "Home") {
+    return (
+      <StyledNav bg="light" expand="lg" fixed="top">
         <Link to="/">
           <Img src={process.env.PUBLIC_URL + "/img/posta logo-inverse.png"} />
         </Link>
@@ -105,15 +112,94 @@ function Navigation() {
                 <A2>Contacto</A2>
               </Li>
             </ScrLink>
-
-            <A href="https://app.postacred.com.ar/?utm_source=Home&utm_medium=Sitio&utm_campaign=Organico&utm_term=2018">
-              <StyledButton variant="primary">PEDÍ TU CRÉDITO</StyledButton>
-            </A>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    </Div>
-  );
+        <A href="https://app.postacred.com.ar/?utm_source=Home&utm_medium=Sitio&utm_campaign=Organico&utm_term=2018">
+          <StyledButton variant="primary">PEDÍ TU CRÉDITO</StyledButton>
+        </A>
+      </StyledNav>
+    );
+  } else if (props.currentSection === "FaqsPage") {
+    return (
+      <StyledNav bg="light" expand="lg" fixed="top">
+        <Link to="/">
+          <Img src={process.env.PUBLIC_URL + "/img/posta logo-inverse.png"} />
+        </Link>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Li2>
+              <NavDropdown title="Leyenda" id="basic-nav-dropdown">
+                <NavDropdown.Item>
+                  <ScrLink
+                    activeClass="active"
+                    to="comofuncionamos"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Cómo Funcionamos
+                  </ScrLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <ScrLink
+                    activeClass="active"
+                    to="comosolicitar"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    ¿Cómo solicitar un crédito?
+                  </ScrLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <ScrLink
+                    activeClass="active"
+                    to="clientes"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Clientes
+                  </ScrLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <ScrLink
+                    activeClass="active"
+                    to="incrementarmonto"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    ¿Querés incrementar el monto de tu crédito?
+                  </ScrLink>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <ScrLink
+                    activeClass="active"
+                    to="datosrelevantes"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    Consultas sobre datos relevantes
+                  </ScrLink>
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Li2>
+          </Nav>
+        </Navbar.Collapse>
+        <A href="https://app.postacred.com.ar/?utm_source=Home&utm_medium=Sitio&utm_campaign=Organico&utm_term=2018">
+          <StyledButton variant="primary">PEDÍ TU CRÉDITO</StyledButton>
+        </A>
+      </StyledNav>
+    );
+  }
 }
 
 export default Navigation;
