@@ -2,20 +2,67 @@ import React from "react";
 import styled from "styled-components";
 
 const Div = styled.div`
-    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  height: 30vh;
+  padding: 20px 20px 20px 20px;
+
+  @media (min-width: 1901px) {
+    height: 25vh;
+  }
+
+  @media (min-width: 1500px) and (max-width: 1900px) {
     height: 30vh;
-    padding: 20px 20px 20px 20px;
-`
+  }
+
+  @media (min-width: 1200px) and (max-width: 1499px) {
+    height: 28vh;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    height: 28vh;
+  }
+`;
 
 const P = styled.p`
-    color:white;
-    font-family: "Arial Black", Gadget, sans-serif;
-`
+  color: white;
+  font-family: "Arial Black", Gadget, sans-serif;
+  margin-bottom: 0px;
+
+  @media (min-width: 1551px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1501px) and (max-width: 1550px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    font-size: 12px;
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    font-size: 11px;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 10px;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 7px;
+  }
+`;
 
 const H5 = styled.h5`
-    color:white;
-    font-family: "Arial Black", Gadget, sans-serif;
-`
+  color: white;
+  font-family: "Arial Black", Gadget, sans-serif;
+
+  @media (min-width: 1200px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 15px;
+  }
+  @media (min-width: 320px) and (max-width: 767px) {
+    font-size: 10px;
+  }
+`;
 
 function Terms() {
   return (

@@ -3,6 +3,7 @@ import { Navbar, Button, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Link as ScrLink } from "react-scroll";
 import styled from "styled-components";
+import "./Navigation.css";
 
 const Img = styled.img`
   margin-left: 140px;
@@ -129,7 +130,7 @@ function Navigation(props) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Li2>
-              <NavDropdown title="Leyenda" id="basic-nav-dropdown">
+              <NavDropdown title="Leyenda" id="nav-dropdown">
                 <NavDropdown.Item>
                   <ScrLink
                     activeClass="active"

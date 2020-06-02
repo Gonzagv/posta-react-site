@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import Navigation from "../components/Navigation";
+import React, { useState } from "react";
+import Navigation from "../components/Navigation/Navigation";
 import How from "../components/How";
 import Req from "../components/Req";
 import styled from "styled-components";
@@ -35,7 +35,7 @@ const H1 = styled.h1`
 const Home = function (props) {
   return (
     <div>
-      <Navigation currentSection="Home"/>
+      <Navigation currentSection="Home" />
       <Div>
         <Info />
       </Div>
