@@ -122,7 +122,7 @@ function Navigation(props) {
     );
   } else if (props.currentSection === "FaqsPage") {
     return (
-      <StyledNav bg="light" expand="lg" fixed="top">
+      <StyledNav bg="light" expand="lg" sticky="top">
         <Link to="/">
           <Img src={process.env.PUBLIC_URL + "/img/posta logo-inverse.png"} />
         </Link>

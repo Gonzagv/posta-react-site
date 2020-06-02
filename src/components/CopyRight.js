@@ -16,6 +16,7 @@ const Img2 = styled.img`
     height: 15px;
     margin: 20px 50px 0px -30px;
   }
+
 `;
 const Img = styled.img`
   height: 50px;

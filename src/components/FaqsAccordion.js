@@ -10,8 +10,23 @@ const H1 = styled.h1`
   color: white;
   height: 15vh;
   font-size: 50px;
-  padding: 140px;
+  padding: 10px;
   font-family: "Arial Black", Gadget, sans-serif;
+  @media (min-width: 1201px) and (max-width: 1900px) {
+    font-size: 50px;
+    height: 15vh;
+    padding: 40px;
+  }
+  @media (min-width: 766px) and (max-width: 1200px) {
+    font-size: 40px;
+    height: 15vh;
+    padding: 50px;
+  }
+  @media (min-width: 360px) and (max-width: 775px) {
+    font-size: 30px;
+    height: 12vh;
+    padding: 40px;
+  }
 `;
 
 const H2 = styled.h1`
@@ -19,9 +34,16 @@ const H2 = styled.h1`
   padding: 40px;
   font-size: 35px;
   font-family: "Arial Black", Gadget, sans-serif;
+  @media (min-width: 1201px) and (max-width: 1900px) {
+    font-size: 40px;
+  }
+  @media (min-width: 766px) and (max-width: 1200px) {
+    font-size: 30px;
+  }
+  @media (min-width: 360px) and (max-width: 775px) {
+    font-size: 20px;
+  }
 `;
-
-const DivAccordeon = styled.div``;
 
 const Div = styled.div`
   background-color: white;
@@ -36,7 +58,7 @@ function FaqsAccordion(props) {
       </H1>
       <Div className="accordion__section">
         <H2 id="comofuncionamos">Cómo Funcionamos</H2>
-        <DivAccordeon className="accordion__comofuncionamos">
+        <div className="accordion__comofuncionamos">
           <Accordion title="¿Quiénes somos y cómo funcionamos?">
             <span className="accordion-text">
               <p>
@@ -428,7 +450,7 @@ function FaqsAccordion(props) {
               </p>
             </span>
           </Accordion>
-        </DivAccordeon>
+        </div>
       </Div>
     </div>
   );

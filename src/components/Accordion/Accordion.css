@@ -2,7 +2,21 @@
   display: flex;
   flex-direction: column;
 }
-
+@media (min-width: 1201px) and (max-width: 1900px) {
+  .accordion-title {
+    font-size: 22px;
+  }
+}
+@media (min-width: 766px) and (max-width: 1200px) {
+  .accordion-title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 360px) and (max-width: 775px) {
+  .accordion-title {
+    font-size: 18px;
+  }
+}
 .accordion-title {
   background-color: #eee;
   color: #444;
@@ -11,6 +25,7 @@
   border: none;
   outline: none;
   transition: background-color 0.6s ease;
+  font-weight: 600;
 }
 
 .rotate {
@@ -25,6 +40,20 @@
 
 .accordion-text {
   font-weight: 400;
-  font-size: 14px;
   padding: 18px;
+}
+@media (min-width: 1201px) and (max-width: 1900px) {
+  .accordion-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 766px) and (max-width: 1200px) {
+  .accordion-text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 360px) and (max-width: 775px) {
+  .accordion-text {
+    font-size: 10px;
+  }
 }

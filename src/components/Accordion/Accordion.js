@@ -18,7 +18,6 @@ function Accordion(props) {
 
   const titleStyle = {
     fontWeight: 600,
-    fontSize: "25px",
   };
 
   return (
