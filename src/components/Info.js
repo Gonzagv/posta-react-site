@@ -13,11 +13,14 @@ const Div = styled.div`
     bottom: 45%;
     border-radius: 10px 10px 10px 10px;
     
-    @media (max-width: 768px) {
-    width: 200px;
+  @media (min-width: 1201px) and (max-width: 1900px) {
+    
   }
-  @media (max-width: 1024px) {
-    font-size:40px;
+  @media (min-width: 766px) and (max-width: 1200px) {
+    
+  }
+  @media (min-width: 360px) and (max-width: 775px) {
+    
   }
 
   
@@ -28,14 +31,14 @@ const Div2 = styled.div`
     font-family: Belgrano, serif;
     font-size: 40px;
     color: black;
-    @media (max-width: 1600) {
+  @media (min-width: 1201px) and (max-width: 1900px) {
     font-size: 30px;
   }
-  @media (max-width: 1400px) {
-    font-size:20px;
+  @media (min-width: 766px) and (max-width: 1200px) {
+    font-size: 20px;
   }
-  @media (max-width: 1024px) {
-    font-size:15px;
+  @media (min-width: 360px) and (max-width: 775px) {
+    font-size: 15px;
   }
 `
 
@@ -46,14 +49,16 @@ const H1 = styled.h1`
     color: rgb(25, 66, 148);
     margin: 20px 20px 20px 20px;
 
-    @media (max-width: 1600px) {
+  @media (min-width: 1201px) and (max-width: 1900px) {
     font-size:55px;
   }
-    @media (max-width: 1400px) {
+  @media (min-width: 766px) and (max-width: 1200px) {
+    margin-top:40px;
     font-size:40px;
   }
-    @media (max-width: 1024px) {
+  @media (min-width: 360px) and (max-width: 775px) {
     font-size:25px;
+    margin-top:50px;
   }
 `
 
@@ -63,15 +68,16 @@ const H4 = styled(animated.h4)`
     color: rgb(84, 84, 84);
     margin: 20px 20px 20px 20px;
 
-    @media (max-width: 1600px) {
+  @media (min-width: 1201px) and (max-width: 1900px) {
     font-size:20px;
   }
-    @media (max-width: 1400px) {
+  @media (min-width: 766px) and (max-width: 1200px) {
     font-size:15px;
   }
-    @media (max-width: 1024px) {
-    font-size: 10px;
+  @media (min-width: 360px) and (max-width: 775px) {
+    font-size:14px;
   }
+  
   
 `
 const B = styled.b`

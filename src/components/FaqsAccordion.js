@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "../components/Navigation/Navigation";
-import CopyRight from "../components/CopyRight";
 import styled from "styled-components";
 import Accordion from "../components/Accordion/Accordion";
 import Terms from "../components/Terms";
@@ -10,7 +9,7 @@ const H1 = styled.h1`
   color: white;
   height: 15vh;
   font-size: 50px;
-  padding: 10px;
+  padding: 40px;
   font-family: "Arial Black", Gadget, sans-serif;
   @media (min-width: 1201px) and (max-width: 1900px) {
     font-size: 50px;
@@ -52,7 +51,6 @@ const Div = styled.div`
 function FaqsAccordion(props) {
   return (
     <div>
-      <Navigation currentSection="FaqsPage" />
       <H1>
         <b>Preguntas Frecuentes</b>
       </H1>

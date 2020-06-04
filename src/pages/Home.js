@@ -14,6 +14,8 @@ const Div = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  background-position: center center; 
+  
 `;
 const Div1 = styled.div`
   background-color: #fe7414;
@@ -30,6 +32,15 @@ const H1 = styled.h1`
   color: white;
   font-size: 50px;
   font-family: "Arial Black", Gadget, sans-serif;
+  @media (min-width: 1201px) and (max-width: 1900px) {
+    font-size: 50px;
+  }
+  @media (min-width: 766px) and (max-width: 1200px) {
+    font-size: 30px;
+  }
+  @media (min-width: 360px) and (max-width: 775px) {
+    font-size: 25px;
+  }
 `;
 
 const Home = function (props) {
