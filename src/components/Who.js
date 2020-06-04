@@ -19,6 +19,10 @@ const Img = styled.img`
 `;
 const H4 = styled.h4`
   font-family: Montserrat, sans-serif;
+<<<<<<< HEAD
+=======
+  margin: -540px 0px 0px 600px;
+>>>>>>> 8f08490cf1b01433e96e2b871aae2f47385f48e1
   color: #fff;
   font-size: 50px;
   @media (min-width: 766px) and (max-width: 1910px) {
@@ -28,6 +32,10 @@ const H4 = styled.h4`
   @media (min-width: 360px) and (max-width: 775px) {
     font-size:30px;
     margin: 0px;
+<<<<<<< HEAD
+=======
+    margin: -530px 0px 0px 0px;
+>>>>>>> 8f08490cf1b01433e96e2b871aae2f47385f48e1
   }
 `;
 const H6 = styled.h6`
