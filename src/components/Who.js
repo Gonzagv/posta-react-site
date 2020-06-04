@@ -4,9 +4,8 @@ import styled from "styled-components";
 const Div = styled.div`
   margin: 0px -10px;
   background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-  height: 53.8vh;
+  height: 509px;
   padding: 60px;
- 
 `;
 
 const Img = styled.img`
@@ -23,30 +22,30 @@ const H4 = styled.h4`
   color: #fff;
   font-size: 50px;
   @media (min-width: 766px) and (max-width: 1910px) {
-    font-size:40px;
+    font-size: 40px;
     margin: 0px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
-    font-size:30px;
+    font-size: 30px;
     margin: 0px;
   }
 `;
 const H6 = styled.h6`
   font-family: Montserrat, sans-serif;
   color: #fff;
-@media (min-width: 766px) and (max-width: 1910px) {
+  @media (min-width: 766px) and (max-width: 1910px) {
     margin: 0px;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
     margin: 0px;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 `;
 const ImgPosta = styled.img`
-  padding-bottom:10px;
+  padding-bottom: 10px;
   height: 40px;
 `;
 const Pre = styled.pre`
@@ -54,12 +53,12 @@ const Pre = styled.pre`
   color: #fff;
   font-size: 25px;
   @media (min-width: 766px) and (max-width: 1910px) {
-    font-size:20px;
+    font-size: 20px;
     margin: 0px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
-    font-size:15px;
-    margin:0px;
+    font-size: 15px;
+    margin: 0px;
   }
 `;
 

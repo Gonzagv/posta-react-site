@@ -8,7 +8,7 @@ const Div = styled.div`
   margin: 0px 10px 20px -50px;
   padding: 20px 10px 100px 10px;
   align-items: center;
-  height: 50vh;
+  height: 500px;
 `;
 const H1 = styled.h1`
   font-family: Ultra, serif;
