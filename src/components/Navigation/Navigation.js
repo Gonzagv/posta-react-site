@@ -9,7 +9,7 @@ const Img = styled.img`
   margin-left: 80px;
   height: 50px;
   width: 150px;
-  margin-top:15px;
+  margin-top: 15px;
 
   @media (max-width: 1600px) {
     height: 40px;
@@ -21,11 +21,10 @@ const Img = styled.img`
     width: 100px;
   }
   @media (min-width: 360px) {
-    margin-bottom:20px;
+    margin-bottom: 20px;
     height: 40px;
     width: 120px;
   }
-  
 `;
 
 const StyledNav = styled(Navbar)`
@@ -40,18 +39,18 @@ const Li = styled.li`
   @media (min-width: 1201px) and (max-width: 1900px) {
     margin: 0px -10px -10px 80px;
     font-size: 18px;
-    margin-bottom:0px;
+    margin-bottom: 0px;
   }
   @media (min-width: 766px) and (max-width: 1200px) {
     margin: 0px -10px -10px 45px;
     font-size: 16px;
-    margin-bottom:0px;
-    margin-left:50px
+    margin-bottom: 0px;
+    margin-left: 50px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
     margin: 0px -10px -10px 40px;
     font-size: 16px;
-    margin-bottom:0px;
+    margin-bottom: 0px;
   }
 
   font-family: "Arial Black", Gadget, sans-serif;
@@ -65,6 +64,22 @@ const Li2 = styled.li`
   text-decoration: none;
   margin-left: 1100px;
   color: #005384;
+  @media (min-width: 1201px) and (max-width: 1900px) {
+    margin: 0px -10px -10px 80px;
+    font-size: 18px;
+    margin-bottom: 0px;
+  }
+  @media (min-width: 766px) and (max-width: 1200px) {
+    margin: 0px -10px -10px 45px;
+    font-size: 16px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+  }
+  @media (min-width: 360px) and (max-width: 775px) {
+    margin: 0px -10px -10px 40px;
+    font-size: 16px;
+    margin-bottom: 0px;
+  }
 
   font-family: "Arial Black", Gadget, sans-serif;
   :hover {
@@ -88,15 +103,15 @@ const StyledButton = styled(Button)`
   text-decoration: none;
   color: white;
   @media (min-width: 1201px) and (max-width: 1900px) {
-    font-size:1rem;
+    font-size: 1rem;
   }
   @media (min-width: 766px) and (max-width: 1200px) {
-    margin-top:10px;
-    font-size:0.9rem;
-    margin-bottom:10px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
-    font-size:1.2rem;
+    font-size: 1.2rem;
   }
 `;
 const A = styled.a`
