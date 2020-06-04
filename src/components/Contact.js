@@ -5,9 +5,9 @@ import {Button} from 'react-bootstrap';
 
 const H4 = styled.h4`
     font-family: Montserrat,sans-serif;
-    margin: -500px 0px 0px 600px;
     font-size: 45px;
     color: #005384;
+    padding-top: 50px;
 `
 const StyledButton = styled(Button)`
     background-color: #005384;
@@ -16,23 +16,25 @@ const StyledButton = styled(Button)`
 `
 
 const Div = styled.div`
-    padding: 570px 600px 0px 0px;
-    margin: 10px 0px 0px 0px;
+    height: 53.8vh;
+    padding: 60px 0px;
 `
 const StyledRow = styled(Row)`
-    padding: 60px 0px 0px 590px;
+    padding-top: 50px;
     color: grey;
     justify-content: space-around;
 `
 const Span = styled.span`
     font-size: 40px;
     :hover{color:#fe7414};
+    @media (min-width: 360px) and (max-width: 860px) {
+        font-size: 4vw;
+    }
 `
 const Span2 = styled.span`
     padding: 10px 0px 0px 0px;
 `
 const StyledRow2 = styled(Row)`
-    padding: 10px 0px 0px 610px;
     color: grey;
     justify-content: space-around;
     margin: 20px -30px;

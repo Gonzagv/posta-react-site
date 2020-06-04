@@ -2,40 +2,37 @@ import React from "react";
 import styled from "styled-components";
 
 const Div = styled.div`
+  margin: 0px -10px;
   background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
   height: 53.8vh;
-  padding: 0px 0px 50px 0px;
+  padding: 60px;
+  position: relative;
 `;
 
 const Img = styled.img`
-  margin: -30px 0px 0px -700px;
-  @media (min-width: 766px) and (max-width: 1910px) {
-    visibility: hidden;
-  }
-  @media (min-width: 360px) and (max-width: 775px) {
+  margin: -30px 0px 0px -600px;
+  width: 329px;
+  position: absolute;
+  @media (min-width: 360px) and (max-width: 1280px) {
     visibility: hidden;
   }
 `;
 const H4 = styled.h4`
   font-family: Montserrat, sans-serif;
-  margin: 0px 0px 0px 600px;
   color: #fff;
   font-size: 50px;
   @media (min-width: 766px) and (max-width: 1910px) {
     font-size:40px;
     margin: 0px;
-    margin: -540px 0px 0px 0px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
     font-size:30px;
     margin: 0px;
-    margin: -510px 0px 0px 0px;
   }
 `;
 const H6 = styled.h6`
   font-family: Montserrat, sans-serif;
   color: #fff;
-  margin: 30px 0px 0px 600px;
 @media (min-width: 766px) and (max-width: 1910px) {
     margin: 0px;
     margin-top:20px;
@@ -48,14 +45,13 @@ const H6 = styled.h6`
   }
 `;
 const ImgPosta = styled.img`
+  position: absolute;
   height: 40px;
-  padding: -100px;
 `;
 const Pre = styled.pre`
   font-family: Montserrat, sans-serif;
   color: #fff;
   font-size: 25px;
-  margin: 30px 0px 0px 600px;
   @media (min-width: 766px) and (max-width: 1910px) {
     font-size:20px;
     margin: 0px;
