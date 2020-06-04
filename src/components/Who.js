@@ -18,7 +18,7 @@ const Img = styled.img`
 `;
 const H4 = styled.h4`
   font-family: Montserrat, sans-serif;
-  margin: 0px 0px 0px 600px;
+  margin: -540px 0px 0px 600px;
   color: #fff;
   font-size: 50px;
   @media (min-width: 766px) and (max-width: 1910px) {
@@ -29,7 +29,7 @@ const H4 = styled.h4`
   @media (min-width: 360px) and (max-width: 775px) {
     font-size:30px;
     margin: 0px;
-    margin: -510px 0px 0px 0px;
+    margin: -530px 0px 0px 0px;
   }
 `;
 const H6 = styled.h6`
