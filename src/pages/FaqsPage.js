@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navigation from "../components/Navigation/Navigation";
 import CopyRight from "../components/CopyRight";
 import styled from "styled-components";

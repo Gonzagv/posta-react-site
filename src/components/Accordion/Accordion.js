@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Accordion.css";
-import styled from 'styled-components';
 
 function Accordion(props) {
   const [active, setActive] = useState(false);

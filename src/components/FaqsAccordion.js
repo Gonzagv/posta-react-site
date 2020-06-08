@@ -1,8 +1,6 @@
 import React from "react";
-import Navigation from "../components/Navigation/Navigation";
 import styled from "styled-components";
 import Accordion from "../components/Accordion/Accordion";
-import Terms from "../components/Terms";
 
 const H1 = styled.h1`
   background-color: #005384;
@@ -76,7 +74,7 @@ function FaqsAccordion(props) {
               </p>
               <p>
                 - WhatsApp:{" "}
-                <a href="https://wa.me/541156906223" target="_blank">
+                <a href="https://wa.me/541156906223">
                   11 5609 62236
                 </a>
               </p>
@@ -87,7 +85,6 @@ function FaqsAccordion(props) {
               <p>
                 - Facebook:{" "}
                 <a
-                  target="_blank"
                   href="https://www.facebook.com/CreditosPosta/"
                 >
                   CreditosPosta
@@ -296,7 +293,7 @@ function FaqsAccordion(props) {
               </p>
               <p>
                 - WhatsApp:{" "}
-                <a href="https://wa.me/541156906223" target="_blank">
+                <a href="https://wa.me/541156906223">
                   11 5609 62236
                 </a>
               </p>
@@ -307,7 +304,6 @@ function FaqsAccordion(props) {
               <p>
                 - Facebook:{" "}
                 <a
-                  target="_blank"
                   href="https://www.facebook.com/CreditosPosta/"
                 >
                   CreditosPosta
@@ -336,7 +332,7 @@ function FaqsAccordion(props) {
               </p>
               <p>
                 - WhatsApp:{" "}
-                <a href="https://wa.me/541156906223" target="_blank">
+                <a href="https://wa.me/541156906223">
                   11 5609 62236
                 </a>
               </p>
@@ -347,7 +343,6 @@ function FaqsAccordion(props) {
               <p>
                 - Facebook:{" "}
                 <a
-                  target="_blank"
                   href="https://www.facebook.com/CreditosPosta/"
                 >
                   CreditosPosta

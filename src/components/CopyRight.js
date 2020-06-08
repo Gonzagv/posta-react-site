@@ -6,64 +6,62 @@ const Img2 = styled.img`
   height: 50px;
   @media (min-width: 1201px) and (max-width: 1900px) {
     height: 40px;
-    margin: -20px 0px 0px 0px;
   }
   @media (min-width: 766px) and (max-width: 1200px) {
     height: 20px;
-    margin: 0px 135px 0px 0px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
-    height: 15px;
-    margin: 20px 50px 0px -30px;
+    height: 20px;
   }
-
 `;
 const Img = styled.img`
   height: 50px;
-  @media (min-width: 1201px) and (max-width: 1900px) {
+  @media (min-width: 1201px) and (max-width: 1920px) {
     height: 40px;
-    margin: -20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
   }
   @media (min-width: 766px) and (max-width: 1200px) {
     height: 30px;
     margin: 30px;
-    margin-left:-5px;
+    margin-left: 20px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
-    height: 20px;
+    height: 15px;
     margin: 30px -10px 0px -30px;
   }
 `;
 
 const Div = styled.div`
   background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-  @media (min-width: 1201px) {
-    height: 27vh;
+  height: 35px;
+  @media (min-width: 1200px) and (max-width:1920px){
+    height: 30vh;
   }
 
   @media (min-width: 776px) and (max-width: 1199px) {
-    padding: 20px;
-    height: 25vh;
+    height: 20vh;
+    padding-top: 20px;
   }
 
   @media (min-width: 360px) and (max-width: 775px) {
     height: 20vh;
+    padding-top: 20px;
   }
 `;
 
 const StyledCol = styled(Col)`
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 1920px) {
     margin: 70px 400px 0px 20px;
   }
   @media (min-width: 766px) and (max-width: 1199px) {
-    margin: 0px -30px 10px;
+    margin: 0px 30px 20px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
     margin: 0px 150px 0px 0px;
   }
 `;
 const StyledCol2 = styled(Col)`
-  @media (min-width: 1201px) {
+  @media (min-width: 1201px) and (max-width: 1920px) {
     margin: 70px 0px 0px 0px;
   }
   @media (min-width: 766px) and (max-width: 1199px) {
@@ -101,14 +99,13 @@ const A = styled.a`
   :hover {
     color: #fe7414;
   }
-  @media (max-width: 1201px) {
+  @media (min-width: 1201px) and (max-width: 1920px) {
     font-size: 14px;
     text-decoration: none;
   }
   @media (min-width: 766px) and (max-width: 1200px) {
-    font-size: 10px;
+    font-size: 7px;
     text-decoration: none;
-    margin: 10px 20px;
     white-space: nowrap;
   }
   @media (min-width: 360px) and (max-width: 775px) {
@@ -118,16 +115,21 @@ const A = styled.a`
   }
 `;
 const StyledRow = styled(Row)`
-  font-size: 15px;
-  padding: 20px 200px 0px 0px;
-  @media (min-width: 1201px) {
-    padding: 10px 200px 0px 0px;
+  @media (min-width: 1201px) and (max-width: 1920px) {
+    position: flex;
+    margin-left: 110px;
+    margin-right: 20px;
+    padding-bottom: 40px;
   }
   @media (min-width: 766px) and (max-width: 1200px) {
-    padding: 0px;
+    position: flex;
+    margin-left: 132px;
+    margin-right: 126px;
   }
   @media (min-width: 360px) and (max-width: 775px) {
-    padding: 0px 100px 0px 0px;
+    position: flex;
+    margin-left: 35px;
+    margin-right: 60px;
   }
 `;
 
@@ -168,26 +170,24 @@ const CopyRight = function () {
             </Row>
           </StyledCol2>
         </Row>
-        <Row>
+        <StyledRow>
           <Col>
-            <StyledRow>
-              <Col>
-                <A
-                  target="_blank"
-                  href="../../resources/terminos-y-condiciones.pdf"
-                >
-                  Términos y Condiciones
-                </A>
-              </Col>
-              <Col>
-                <A href="https://www.argentina.gob.ar/defensadelconsumidor">
-                  Defensa al Consumidor
-                </A>
-              </Col>
-              <Col>
-                <A href="mailto:empleos@postacred.com">Trabaja con nosotros</A>
-              </Col>
-            </StyledRow>
+            <Row>
+              <A
+                target="_blank"
+                href="../../resources/terminos-y-condiciones.pdf"
+              >
+                Términos y Condiciones
+              </A>
+            </Row>
+            <Row>
+              <A href="https://www.argentina.gob.ar/defensadelconsumidor">
+                Defensa al Consumidor
+              </A>
+            </Row>
+            <Row>
+              <A href="mailto:empleos@postacred.com">Trabaja con nosotros</A>
+            </Row>
           </Col>
           <Col>
             <Span>
@@ -199,7 +199,7 @@ const CopyRight = function () {
               </A>
             </Span>
           </Col>
-        </Row>
+        </StyledRow>
       </Container>
     </Div>
   );

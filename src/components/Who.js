@@ -18,7 +18,6 @@ const Img = styled.img`
 `;
 const H4 = styled.h4`
   font-family: Montserrat, sans-serif;
-  margin: -540px 0px 0px 600px;
   color: #fff;
   font-size: 50px;
   @media (min-width: 766px) and (max-width: 1910px) {
